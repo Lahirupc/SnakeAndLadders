@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Xome
+ * @author Lahiru
  */
 public class BoardLayout extends JPanel{
     //private static JPanel panel; 

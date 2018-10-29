@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 /**
  *
- * @author Xome
+ * @author Lahiru
  */
 public class Board {
     private static HashMap<Integer, Integer> boardMap = new HashMap<>();

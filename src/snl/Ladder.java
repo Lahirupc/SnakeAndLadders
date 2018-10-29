@@ -7,7 +7,7 @@ package snl;
 
 /**
  *
- * @author Xome
+ * @author Lahiru
  */
 public class Ladder extends Jumper {
     private static int noLadders;

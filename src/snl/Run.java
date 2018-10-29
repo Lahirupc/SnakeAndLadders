@@ -5,14 +5,9 @@
  */
 package snl;
 
-import java.awt.BorderLayout;
-import java.awt.Container;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JFrame;
 
-import java.awt.GridLayout;
 
 public class Run extends JFrame {
     
@@ -32,31 +27,36 @@ public class Run extends JFrame {
     }    
     
     public static void main(String[] args) {
-        
+        //creating the board according to the randomly generated map
         Board.initializeBoard();
-        System.out.println("jumpers ready");
-        Jumper.placeJumpers(7, 6);
-        
+        Jumper.placeJumpers(7, 6);     
         Board.printBoardMap();
-
-        Player player1 = new Player("Lahiru");
-        System.out.println("lahiru");
+        System.out.println("Board ready"); 
         
-        for(int i=1; i<=30;i++){
+        // Creating payers
+        Player player1 = new Player("Lahiru");
+        System.out.println(player1.getName()+" has joined the game!");
+        Player player2 = new Player("Kasun");
+        System.out.println(player2.getName()+" has joined the game!");
+        
+        Player curPlayer;
+        for(int i=1; i<=100;i++){
+            //setting the current player
+            curPlayer = (i%2==0)? player1 : player2;
             int top = Die.roll();
-            System.out.println("D:"+top);
+            System.out.println("Die:"+top);
             
-            int curPosition = player1.getPosition();
+            int curPosition = curPlayer.getPosition();
             curPosition = curPosition + top;
             if(curPosition>=100){
-                System.out.println("Player "+ player1.getName() +" has won!");
+                System.out.println("Player "+ curPlayer.getName() +" has won!");
                 break;
             }else{
                 curPosition = Board.getBoardMapOutput(curPosition);
-                player1.setPosition(curPosition);
+                curPlayer.setPosition(curPosition);
             }
             
-            System.out.println("Lahiru:"+curPosition);
+            System.out.println(curPlayer.getName()+": "+curPosition);
         }
         
         EventQueue.invokeLater(() -> {

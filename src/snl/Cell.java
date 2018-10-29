@@ -7,7 +7,7 @@ package snl;
 
 /**
  *
- * @author Xome
+ * @author Lahiru
  */
 
 import java.awt.Dimension;

@@ -7,7 +7,7 @@ package snl;
 
 /**
  *
- * @author Xome
+ * @author Lahiru
  */
 public class Player {
     private String name;

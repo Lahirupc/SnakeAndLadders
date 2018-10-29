@@ -7,7 +7,7 @@ package snl;
 
 /**
  *
- * @author Xome
+ * @author Lahiru
  */
 public class Snake extends Jumper {
     private static int noSnakes = 0;

@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.concurrent.ThreadLocalRandom;
 /**
  *
- * @author Xome
+ * @author Lahiru
  */
 public class Calculator {
     public static int randomNumberInRange(int lower, int upper){

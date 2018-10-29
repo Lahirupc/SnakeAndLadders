@@ -7,7 +7,7 @@ package snl;
 
 /**
  *
- * @author Xome
+ * @author Lahiru
  */
 public class Die {
     private int topFace;

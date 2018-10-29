@@ -5,11 +5,9 @@
  */
 package snl;
 
-import java.util.ArrayList;
-
 /**
  *
- * @author Xome
+ * @author Lahiru
  */
 public class Jumper {
     protected int startingPoint;
